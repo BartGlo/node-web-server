@@ -39,6 +39,12 @@ app.get("/", (req, res) => {
     welcomeMessage: "Welcome human being!"
   });
 });
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "Projects Page",
+    welcomeMessage: "All my awesome things"
+  });
+});
 
 app.get("/about", (req, res) => {
   //   res.send("About Page");
